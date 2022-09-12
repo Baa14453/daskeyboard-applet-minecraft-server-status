@@ -1,0 +1,82 @@
+{
+  "name": "daskeyboard-applet--minecraft-status",
+  "displayName": "Minecraft Server Status",
+  "version": "1.0",
+  "description": "See Minecraft status and player count.",
+  "longDescription": "Displays whether the target Minecraft server is online or not, shows number of players online by lighting up 1 - 9 keys.",
+  "officialProductName": "Minecraft Server Status",
+  "appUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status",
+  "publisherName": "Legitcorp",
+  "publisher": "Legitcorp",
+  "isSingleton": false,
+  "videoUrl": "",
+  "icon": "assets/icon.svg",
+  "image": "assets/image.png",
+  "authorName": "Baa",
+  "authorUrl": "https://legitcorp.com",
+  "issuesUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status/-/issues",
+  "homePageUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status",
+  "developerRepoUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status",
+  "licenseUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status/LICENSE",
+  "changelogUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status/CHANGELOG.md",
+  "license": "GNU AGPL3.0",
+  "readMeUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status/README.md",
+  "readMeEndUserUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status/README_ENDUSER.md",
+  "dependencies": {
+    "daskeyboard-applet": "^2.11.5"
+  },
+  "engines": {
+    "das-keyboard-q": "3.0.0"
+  },
+  "applet": {
+    "defaults": {}
+  },
+  "main": "index.js",
+  "qConfig": {
+    "geometry": {
+      "width": 11,
+      "height": 1
+    },
+    "questions": [
+      {
+        "key": "serverAddress",
+        "label": "Enter the server address of the Minecraft server you want to monitor.",
+        "help": "This is usually an IP address or a domain name of the Minecraft server e.g. 192.168.1.10",
+        "value": "legitcorp.com",
+        "required": true,
+        "order": 1,
+        "controlType": "textbox"
+      },
+      {
+        "key": "serverPort",
+        "label": "Enter the server port of the Minecrat server you want to monitor.",
+        "help": "This is usually 25565",
+        "value": "25565",
+        "required": true,
+        "order": 1,
+        "controlType": "textbox"
+      },
+      {
+        "key": "onlineColour",
+        "label": "Enter the colour that will be used when the server or player is online.",
+        "help": "I suggest green",
+        "value": "#00FF00",
+        "required": true,
+        "order": 2,
+        "controlType": "color"
+      },
+      {
+        "key": "offlineColour",
+        "label": "Enter the colour that will be used when the server is offline.",
+        "help": "I suggest red",
+        "value": "#FF0000",
+        "required": true,
+        "order": 3,
+        "controlType": "color"
+      }
+    ]
+  },
+  "devDependencies": {
+    "minecraft-protocol": "^1.36.1"
+  }
+}
