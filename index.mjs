@@ -10,7 +10,7 @@ function removeColorsFromString(text) {
 class MinecraftStatus extends q.DesktopApp {
     constructor() {
         super();
-        // run every 1 min
+        // run every 10 seconds
         this.pollingInterval = 10000;
     }
 

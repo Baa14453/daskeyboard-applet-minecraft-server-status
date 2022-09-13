@@ -42,7 +42,7 @@
         "key": "serverAddress",
         "label": "Enter the server address of the Minecraft server you want to monitor.",
         "help": "This is usually an IP address or a domain name of the Minecraft server e.g. 192.168.1.10",
-        "value": "legitcorp.com",
+        "value": "192.168.1.10",
         "required": true,
         "order": 1,
         "controlType": "textbox"
@@ -77,6 +77,5 @@
     ]
   },
   "devDependencies": {
-    "minecraft-protocol": "^1.36.1"
   }
 }
