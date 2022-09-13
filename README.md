@@ -33,6 +33,27 @@ the Q Desktop application (<https://www.daskeyboard.com/q>)
 2. Enter the server's IP address, port colour for online and offline.
 ![Choosing options.](assets/setup-2.png "Choosing options.")
 
+## Notes on Building
+This applet uses the `minecraft-protocol` dependency by PrismarineJS, however this library is huge (over 100MB).
+`minecraft-protocol` has been cut-down, compressed and bundled into the final index.js file which is why it looks crazy like that.
+
+The actual editable JavaScript is called index.mjs
+
+After modifying index.mjs you need to generate a new index.js file, to do this follow these steps:
+
+1. Clone the bundled `minecraft-protocol-template` into your folder of `Minecraft Server Status`:
+
+`git clone https://gitlab.legitcorp.com/josh/minecraft-protocol-template.git`
+
+2. Inside the new `minecraft-protocol-template` folder is `esbuild.config.js` edit this file, next to `entryPoints` replace `src/index.mjs` with `../index.mjs`, and next to `outfile` change `out.js` to `../index.js`. Save and close this file.
+
+3. Open a terminal inside `minecraft-protocol-template` and run these commands:
+`npm install` then `npm build`. `npm build` will have taken any changes from your `index.mjs` and bundled them into `index.js` which can now be installed within the Das Keyboard Q program.
+
+In order to help with this, a VSCode `tasks.json` file is included in the Minecraft Server Status repository. The task `Build-minecraft-protocol` will run the `npm build` command inside the `minecraft-protocol-template` directory.
+
+A second task inside tasks.json will run your generated index.js file for you for testing, it is called `Run test` this includes the Das Keyboard dev command-line arguments you need to test from the command-line.
+
 ## Running tests
 
 - I didn't write any tests because I don't know how.
