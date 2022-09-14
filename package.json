@@ -77,5 +77,6 @@
     ]
   },
   "devDependencies": {
+    "mc-server-status": "^2.0.2"
   }
 }
