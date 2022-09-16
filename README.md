@@ -43,7 +43,7 @@ If you're on Windows see [this guide](https://phoenixnap.com/kb/yarn-windows) on
 6. Position the row over your desired keys.
 ![Positioning the keys.](assets/setup-1.png "Positioning the keys.")
 
-7. Enter the server's IP address, port colour for online and offline.
+7. Enter the server's IP address, port and colour for online and offline.
 ![Choosing options.](assets/setup-2.png "Choosing options.")
 
 ## Compiling
@@ -60,13 +60,21 @@ A VSCode task inside tasks.json will run the index.js file for you for testing, 
 
 ## Running tests
 
-- I didn't write any tests because I don't know how.
+1. Launch a Minecraft server or locate one you want to use for testing.
+
+2. Edit `test/config.json` and input the IP address of your Minecraft server.
+
+3. Run `yarn test`.
+
+4. Other settings inside `config.json` can be modified to reflect different return values from a Minecraft server.
 
 ## Contributions
 
  - [`mc-server-status` library by janispritzkau](https://github.com/janispritzkau/mc-server-status) which does all the hard work.
 
- - Major JavaScript consultancy by [JF908](https://github.com/jf908/)
+ - Major JavaScript consultancy provided by [JF908](https://github.com/jf908/)
+
+ - [This useful blog](https://codeburst.io/how-to-test-javascript-with-mocha-the-basics-80132324752e) on writing Mocha tests
 
 
 ## Corporate jargon

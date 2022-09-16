@@ -32,6 +32,9 @@
     "defaults": {}
   },
   "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
   "qConfig": {
     "geometry": {
       "width": 11,
