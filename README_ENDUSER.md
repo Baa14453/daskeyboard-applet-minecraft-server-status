@@ -1,12 +1,9 @@
-# Q Applet: Youtube Livestream Status
+# Q Applet: Minecraft Server Status
 
-Displays the status of your chosen youtuber as a colour on your keyboard.
-This program was built to monitor vtubers and I have no shame in admitting that.
+Displays the status of your chosen Minecraft server as a row of colours on your keyboard.
+The first key indicates the server is online, proceeding keys indicator the number of players, up to 10 keys.
 
-[GitLab repository](https://gitlab.legitcorp.com/daskeyboard/youtubelivestreamstatus)
-
-Currently you supply a Youtube API Key and a Youtube Channel ID to configure the app.
-In future I'll make this a Google Login and it will let you choose from your subscribers, this makes more sense.
+[GitLab repository](https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status)
 
 ## Example
 

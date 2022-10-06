@@ -76,6 +76,11 @@ A VSCode task inside tasks.json will run the index.js file for you for testing, 
 
  - [This useful blog](https://codeburst.io/how-to-test-javascript-with-mocha-the-basics-80132324752e) on writing Mocha tests
 
+## Contributing
+
+Issues and Pull Requests Welcome \o/
+Please make them on my GitLab [here](https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status) (You can sign in with GitHub.)
+(Changes will be mirrored to GitHub.)
 
 ## Corporate jargon
 
