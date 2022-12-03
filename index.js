@@ -18,6 +18,7 @@ class MinecraftStatus extends q.DesktopApp {
             return (res);
         } catch(err) {
             logger.warn(`Error while getting Minecraft Server details: ${err}`);
+            logger.info(`Response from Minecraft Server: ${JSON.stringify(res)}`)
             return false;
         }
     }

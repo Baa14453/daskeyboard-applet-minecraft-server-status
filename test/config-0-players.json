@@ -1,0 +1,14 @@
+{
+    "applet":
+        {"user":
+            {
+                "serverAddress": "127.0.0.1",
+                "serverPort": "25565",
+                "onlineColour": "#08F26E",
+                "offlineColour": "#FF0000"
+            }
+        },
+    "players": 
+        {"online": 0
+        }
+}
