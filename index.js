@@ -18,7 +18,6 @@ class MinecraftStatus extends q.DesktopApp {
             return (res);
         } catch(err) {
             logger.warn(`Error while getting Minecraft Server details: ${err}`);
-            logger.info(`Response from Minecraft Server: ${JSON.stringify(res)}`)
             return false;
         }
     }
@@ -46,9 +45,11 @@ class MinecraftStatus extends q.DesktopApp {
 
         } else {
         // If Server is offline.
+        //console.log(Array.from({ length: 11 }).map((_,i) => i === 0 ? new q.Point(offlineColour) : new q.Point("#000000")))
             return new q.Signal({
                 points: [
-                    [new q.Point(offlineColour)]
+                    //[new q.Point(offlineColour)]
+                    Array.from({ length: 11 }).map((_,i) => i === 0 ? new q.Point(offlineColour) : new q.Point(offlineColour))
                 ],
                 name: "Minecraft server offline!",
                 message: `${this.config.serverAddress} is offline.`
@@ -67,9 +68,10 @@ class MinecraftStatus extends q.DesktopApp {
                 return this.generateSignal(serverStatus, onlineColour, offlineColour);
             }).catch((err) => {
                 logger.error(`Error while getting server status: ${err}`);
+                return this.generateSignal(false, onlineColour, offlineColour);
             });
         } else {
-            return null;
+            return this.generateSignal(false, onlineColour, offlineColour);
         }
     }
 }
