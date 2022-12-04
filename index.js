@@ -39,7 +39,7 @@ class MinecraftStatus extends q.DesktopApp {
             return new q.Signal({
                 points: [pointsList],
                 name: "Minecraft server online!",
-                message: `${this.config.serverAddress} is online. | ${JSON.stringify(serverStatus.players.online)}/${JSON.stringify(serverStatus.players.max)} | ${JSON.stringify(serverStatus.description)}`,
+                message: `${this.config.serverAddress} is online. | ${JSON.stringify(serverStatus.players.online)}/${JSON.stringify(serverStatus.players.max)} | ${JSON.stringify(serverStatus.description.text)}`,
             }
             );
 

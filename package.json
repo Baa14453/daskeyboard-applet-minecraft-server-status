@@ -38,7 +38,13 @@
   "qConfig": {
     "geometry": {
       "width": 11,
-      "height": 1
+      "height": 1,
+      "defaults": {
+        "origin": {
+          "x": 0,
+          "y": 2
+        }
+      }
     },
     "questions": [
       {
