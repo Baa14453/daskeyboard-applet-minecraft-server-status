@@ -58,7 +58,7 @@
       },
       {
         "key": "serverPort",
-        "label": "Enter the server port of the Minecrat server you want to monitor.",
+        "label": "Enter the server port of the Minecraft server you want to monitor.",
         "help": "This is usually 25565",
         "value": "25565",
         "required": true,
