@@ -10,7 +10,7 @@
   "publisher": "Legitcorp",
   "isSingleton": false,
   "videoUrl": "",
-  "icon": "assets/icon.svg",
+  "icon": "assets/icon.png",
   "image": "assets/image.png",
   "authorName": "Baa",
   "authorUrl": "https://legitcorp.com",
@@ -23,7 +23,8 @@
   "readMeUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status/README.md",
   "readMeEndUserUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status/README_ENDUSER.md",
   "dependencies": {
-    "daskeyboard-applet": "^2.11.5"
+    "daskeyboard-applet": "^2.11.5",
+    "mc-server-status": "^2.0.2"
   },
   "engines": {
     "das-keyboard-q": "3.0.0"
@@ -42,7 +43,7 @@
       "defaults": {
         "origin": {
           "x": 0,
-          "y": 2
+          "y": 1
         }
       }
     },
@@ -84,8 +85,5 @@
         "controlType": "color"
       }
     ]
-  },
-  "devDependencies": {
-    "mc-server-status": "^2.0.2"
   }
 }
