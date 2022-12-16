@@ -1,14 +1,16 @@
 {
-    "applet":
-        {"user":
-            {
-                "serverAddress": "127.0.0.1",
-                "serverPort": "25565",
-                "onlineColour": "#08F26E",
-                "offlineColour": "#FF0000"
-            }
-        },
-    "players": 
-        {"online": 10
+    "applet": {
+        "user": {
+            "serverAddress": "127.0.0.1",
+            "serverPort": "25565",
+            "onlineColour": "#08F26E",
+            "offlineColour": "#FF0000"
         }
+    },
+    "players": {
+        "online": 10
+    },
+    "description": {
+        "text": "A Test Minecraft server description with 10 players."
+    }
 }
