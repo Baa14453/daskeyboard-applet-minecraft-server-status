@@ -60,13 +60,7 @@ A VSCode task inside tasks.json will run the index.js file for you for testing, 
 
 ## Running tests
 
-1. Launch a Minecraft server or locate one you want to use for testing.
-
-2. Edit `test/config.json` and input the IP address of your Minecraft server.
-
-3. Run `yarn test`.
-
-4. Other settings inside `config.json` can be modified to reflect different return values from a Minecraft server.
+1. Run `yarn test`.
 
 ## Contributions
 
