@@ -18,10 +18,10 @@
   "homePageUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status",
   "developerRepoUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status",
   "licenseUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status/LICENSE",
-  "changelogUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status/CHANGELOG.md",
+  "changelogUrl": "CHANGELOG.md",
   "license": "GNU AGPL3.0",
-  "readMeUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status/README.md",
-  "readMeEndUserUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status/README_ENDUSER.md",
+  "readMeUrl": "README.md",
+  "readMeEndUserUrl": "README_ENDUSER.md",
   "dependencies": {
     "daskeyboard-applet": "^2.11.5",
     "mc-server-status": "^2.0.2"
