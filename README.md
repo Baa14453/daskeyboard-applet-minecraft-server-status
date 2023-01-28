@@ -60,6 +60,8 @@ If you're on Windows see [this guide](https://phoenixnap.com/kb/yarn-windows) on
 A VSCode task inside tasks.json will run the index.js file for you for testing, it is called `Run test` this includes the Das Keyboard dev command-line arguments you need to test from the command-line.
 
 ## Running tests
+Host a local Minecraft server on `127.0.0.1` and port `25565`, or modify [test/config-0-players.json](test/config-0-players.json) to point to another server.
+Or just ignore the test for `#getMinecraftStatus()`
 
 1. Run `yarn test`.
 
