@@ -50,7 +50,7 @@
     "questions": [
       {
         "key": "serverAddress",
-        "label": "Enter the server address of the Minecraft server you want to monitor.",
+        "label": "Server address of the Minecraft server",
         "help": "This is usually an IP address or a domain name of the Minecraft server e.g. 192.168.1.10",
         "value": "192.168.1.10",
         "required": true,
@@ -59,7 +59,7 @@
       },
       {
         "key": "serverPort",
-        "label": "Enter the server port of the Minecraft server you want to monitor.",
+        "label": "Server port of the Minecraft server",
         "help": "This is usually 25565",
         "value": "25565",
         "required": true,
@@ -68,7 +68,7 @@
       },
       {
         "key": "onlineColour",
-        "label": "Enter the colour that will be used when the server or player is online.",
+        "label": "Colour when the server or any player is online",
         "help": "I suggest green",
         "value": "#00FF00",
         "required": true,
@@ -77,7 +77,7 @@
       },
       {
         "key": "offlineColour",
-        "label": "Enter the colour that will be used when the server is offline.",
+        "label": "Colour when the server is offline",
         "help": "I suggest red",
         "value": "#FF0000",
         "required": true,
@@ -85,5 +85,8 @@
         "controlType": "color"
       }
     ]
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }

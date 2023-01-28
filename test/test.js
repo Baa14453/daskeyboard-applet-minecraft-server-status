@@ -12,7 +12,7 @@ describe('MinecraftStatus', function () {
   describe('#getMinecraftStatus()', function () {
     it('gets Minecraft server status', function () {
       app.getMinecraftStatus(config0Players.applet.user.serverAddress, config0Players.applet.user.serverPort).then(res => {
-        console.debug("Minecraft Server Response: " + $JSON.stringify(res));
+        console.debug("Minecraft Server Response: " + JSON.stringify(res));
           // Test if target is an online Minecraft server by checking if this value exists and is a number.
           assert.equal(res.players.online, "number")
       })

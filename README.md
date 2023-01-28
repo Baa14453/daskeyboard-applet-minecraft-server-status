@@ -1,21 +1,21 @@
 # Q Applet: Minecraft Server Status
 
 Displays the status of your chosen Minecraft server as a row of colours on your keyboard.
-The first key indicates the server is online, proceeding keys indicator the number of players, up to 10 keys.
+The first key indicates if the server is online, following keys indicate the number of players.
 
 [GitLab repository](https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status)
 
 ## Example
 
-Example where the Minecraft server is online, but there are no players.
+### Minecraft server is online, but no players
 
 ![Minecraft server is online.](assets/online-noplayers.png "Minecraft server is online.")
 
-Example where the Minecraft server is online, and there is 1 player.
+### Minecraft server is online, with 1 player
 
 ![Minecraft server is online with 1 player.](assets/online-oneplayer.png "Minecraft server is online with 1 player.")
 
-Example where the Minecraft server is offline.
+### Minecraft server is offline
 
 ![Minecraft server is offline.](assets/offline.png "Minecraft server is offline.")
 
@@ -28,11 +28,13 @@ Example where the Minecraft server is offline.
 Requires a Das Keyboard Q Series: www.daskeyboard.com
 
 Installation, configuration and uninstallation of applets is done within
-the Q Desktop application (<https://www.daskeyboard.com/q>)
+[the Q Desktop application](<https://www.daskeyboard.com/q>).
 
 1. Clone the repository with Git or download it as a ZIP and unzip it.
 
-`git clone https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status.git`
+````
+git clone https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status.git
+````
 
 2. Open a terminal or cmd or PowerShell inside the folder and run `yarn`.
 If you're on Windows see [this guide](https://phoenixnap.com/kb/yarn-windows) on installing Yarn first.
@@ -43,13 +45,7 @@ If you're on Windows see [this guide](https://phoenixnap.com/kb/yarn-windows) on
 
 5. Navigate to the folder holding the Applet and click OK.
 
-6. Position the row over your desired keys.
-
-![Positioning the keys.](assets/setup-1.png "Positioning the keys.")
-
-7. Enter the server's IP address, port and colour for online and offline.
-
-![Choosing options.](assets/setup-2.png "Choosing options.")
+6. Follow displayed instructions.
 
 ## Compiling
 

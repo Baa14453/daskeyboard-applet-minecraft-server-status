@@ -45,10 +45,8 @@ class MinecraftStatus extends q.DesktopApp {
 
         } else {
         // If Server is offline.
-        //console.log(Array.from({ length: 11 }).map((_,i) => i === 0 ? new q.Point(offlineColour) : new q.Point("#000000")))
             return new q.Signal({
                 points: [
-                    //[new q.Point(offlineColour)]
                     Array.from({ length: 11 }).map((_,i) => i === 0 ? new q.Point(offlineColour) : new q.Point(offlineColour))
                 ],
                 name: "Minecraft server offline!",
